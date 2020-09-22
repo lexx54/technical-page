@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Technical Page</title>
+    <style>
+      @import url(css/main.css);
+    </style>
   </head>
   <body>
     <nav id="navbar">
-      <header></header>
+      <header>JavaScript Quick Documentation</header>
       <a href="#JavaScript" class="nav-link">JavaScript</a>
       <a href="#Grammar" class="nav-link">Grammar</a>
       <a href="#Control_Flow" class="nav-link">Control Flow</a>
@@ -18,7 +21,7 @@
     <main id="main-doc">
       <section class="main-section" id="JavaScript">
         <header><h1>JavaScript</h1></header>
-        <p>what is JavaScript</p>
+        <p><span class="subtitle">What is JavaScript?</span></p>
         <p>
           JavaScript is a cross-platform, object-oriented scripting language
           used to make webpages interactive (e.g., having complex animations,
@@ -35,14 +38,15 @@
 
       <section class="main-section" id="Grammar">
         <header><h1>Grammar</h1></header>
-        <p>Basic</p>
+        <p><span class="subtitle">Basic</span></p>
         <p>
           JavaScript is case-sensitive and uses the Unicode character set. For
           example, the word Früh (which means "early" in German) could be used
           as a variable name.
         </p>
         <code>let fruh="foobar"</code>
-        <p>comments</p>
+
+        <p><span class="subtitle">Comments</span></p>
         <p>
           Comments behave like whitespace, and are discarded during script
           execution.
@@ -51,7 +55,8 @@
           // a one line comment <br />/* this is a longer, * multi-line comment
           */
         </code>
-        <p>Declarations</p>
+
+        <p><span class="subtitle">Declaration</span></p>
         <p>
           You use variables as symbolic names for values in your application.
           The names of variables, called identifiers
@@ -64,18 +69,18 @@
 
       <section class="main-section" id="Control_Flow">
         <header><h1>Control Flow</h1></header>
-        <p><span>Block Statements</span></p>
+        <p><span class="subtitle">Block Statements</span></p>
         <p>
           The most basic statement is a block statement, which is used to group
           statements. The block is delimited by a pair of curly brackets:
         </p>
         <code>
           {
-          <br />statement_1; <br />statement_2; <br />⋮ <br />statement_n;
-          <br />}
+          <br /><span class="spacer">statement_1;</span> <br /><span class="spacer">statement_2</span>;
+          <br /><span class="spacer">⋮</span> <br /><span class="spacer">statement_n;<span></span> <br />}
         </code>
         <h2>Conditional Statements</h2>
-        <p><span>If ... else statement</span></p>
+        <p><span class="subtitle">If ... else statement</span></p>
         <p>
           Use the if statement to execute a statement if a logical condition is
           true. Use the optional else clause to execute a statement if the
@@ -83,45 +88,41 @@
         </p>
         <code>
           if (condition) {
-          <br />statement_1; <br />} else { <br />statement_2; <br />}
+          <br /><span class="spacer">statement_1;</span> <br />} else { <br /><span class="spacer">statement_2;</span> <br />}
         </code>
-        <p><span>Switch Statement</span></p>
+        <p><span class="subtitle">Switch Statement</span></p>
         <p>
           A switch statement allows a program to evaluate an expression and
           attempt to match the expression's value to a case label. If a match is
           found, the program executes the associated statement.
         </p>
-        <code></code>
-        <p><span></span></p>
-        <p></p>
         <code>
           switch (expression) {
-          <br />case label_1: <br />statements_1; <br />[break;] <br />case
-          label_2: <br />statements_2; <br />[break;] <br />… <br />default:
-          <br />statements_def; <br />[break;] <br />}
+          <br /><span class="spacer">case label_1:</span> <br /><span class="spacer1">statements_1;</span> <br /><span class="spacer1">[break;]</span> <br /><span class="spacer">case
+          label_2:</span> <br /><span class="spacer1">statements_2; </span><br /><span class="spacer1">[break;]</span> <br /><span class="spacer">…</span> <br /><span class="spacer">default:</span>
+          <br /><span class="spacer1">statements_def;</span> <br /><span class="spacer1">[break;]</span> <br /><span class="spacer">}</span>
         </code>
       </section>
 
       <section class="main-section" id="Loops">
         <header><h1>Loops</h1></header>
-        <p><span>For statement</span></p>
+        <p><span class="subtitle">For statement</span></p>
         <p>
           A for loop repeats until a specified condition evaluates to false.
         </p>
         <code
-          >for ([initialExpression]; [conditionExpression];
-          [incrementExpression]) <br />{statement}</code
+          >for ([initialExpression]; [conditionExpression];[incrementExpression]) <br /><span class="spacer">{statement}</span></code
         >
-        <p><span>While Statement</span></p>
+        <p><span class="subtitle">While Statement</span></p>
         <p>
           A while statement executes its statements as long as a specified
           condition evaluates to true
         </p>
-        <code>while (condition) <br />{statement}</code>
-        <p><span>Break Statement</span></p>
+        <code>while (condition) <br /><span class="spacer">{statement}</span></code>
+        <p><span class="subtitle">Break Statement</span></p>
         <p>Use the break statement to terminate a loop, switch</p>
-        <code>while (condition){ <br />breark; <br />} </code>
-        <p><span>Continue Statement</span></p>
+        <code>while (condition){ <br /><span class="spacer">break;</span> <br />} </code>
+        <p><span class="subtitle">Continue Statement</span></p>
         <p>
           it terminates the current iteration of the innermost enclosing while,
           do-while, or for statement and continues execution of the loop with
@@ -129,29 +130,29 @@
         </p>
         <code>
           for ([initialExpression];[conditionExpression];[incrementExpression]){
-          <br />continue; <br />}
+          <br /><span class="spacer">continue;</span> <br />}
         </code>
 
-        <p><span>For ... in Statement</span></p>
+        <p><span class="subtitle">For ... in Statement</span></p>
         <p>
           The for...in statement iterates a specified variable over all the
           enumerable properties of an object.
         </p>
-        <code>for (variable in object) <br />{statement}</code>
+        <code>for (variable in object) <br /><span class="spacer">{statement}</span></code>
 
-        <p><span>For ... of Statement</span></p>
+        <p><span class="subtitle">For ... of Statement</span></p>
         <p>
           The for...of statement creates a loop Iterating over iterable objects
           (including Array, Map, Set, arguments object and so on), invoking a
           custom iteration hook with statements to be executed for the value of
           each distinct property.
         </p>
-        <code>for (variable of object) <br />{statement}</code>
+        <code>for (variable of object) <br /><span class="spacer">{statement}</span></code>
       </section>
 
       <section class="main-section" id="Functions">
         <header><h1>Functions</h1></header>
-        <p><span>Function Declaration</span></p>
+        <p><span class="subtitle">Function Declaration</span></p>
         <p>
           A function definition (also called a function declaration, or function
           statement) consists of the function keyword, followed by:
@@ -168,10 +169,10 @@
           </li>
         </ul>
         <code
-          >function square(number) { <br />return number * number; <br />}</code
+          >function square(number) { <br /><span class="spacer">return number * number;</span> <br />}</code
         >
 
-        <p><span>Function expression</span></p>
+        <p><span class="subtitle">Function expression</span></p>
         <p>
           While the function declaration above is syntactically a statement,
           functions can also be created by a function expression.
@@ -181,7 +182,7 @@
           x = square(4) // x gets the value 16</code
         >
 
-        <p><span>Calling Functions</span></p>
+        <p><span class="subtitle">Calling Functions</span></p>
         <p>
           Defining a function does not execute it. Defining it simply names the
           function and specifies what to do when the function is called.
@@ -192,7 +193,7 @@
         </p>
         <code>functionName(); <br />square(5); </code>
 
-        <p><span>recursion</span></p>
+        <p><span class="subtitle">Recursion</span></p>
         <p>
           A function can refer to and call itself. There are three ways for a
           function to refer to itself:
@@ -204,12 +205,12 @@
         </ul>
         <code>
           function loop(x) {
-          <br />if (x >= 10) // "x >= 10" is the exit condition (equivalent to
-          "!(x < 10)") <br />return; <br />// do stuff <br />loop(x + 1); // the
-          recursive call <br />} <br />loop(0);
+          <br /><span class="spacer">if (x >= 10) // "x >= 10" is the exit condition (equivalent to
+            "!(x < 10)")</span> <br /><span class="spacer1">return;</span> <br />// do stuff <br /><span class="spacer">loop(x + 1); // the
+              recursive call</span> <br />} <br />loop(0);
         </code>
 
-        <p><span>Arrow Function</span></p>
+        <p><span class="subtitle">Arrow Function</span></p>
         <p>
           An arrow function expression (previously, and now incorrectly known as
           fat arrow function) has a shorter syntax compared to function

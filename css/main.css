@@ -1,0 +1,39 @@
+/* -----------global start------------*/
+body {
+  display: flex;
+}
+/* -----------global end------------*/
+
+/* -----------Header Start------------*/
+#navbar {
+  flex: 0 0 10%;
+}
+/* -----------Header End------------*/
+
+/* -----------Main Start------------*/
+
+main header {
+  text-align: center;
+  font-size: 1.5em;
+}
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  font-size: 1.2em;
+  border-bottom: 1px solid #663399;
+}
+code {
+  background-color: #deceef;
+}
+.spacer {
+  padding-left: 1em;
+}
+.spacer1 {
+  padding-left: 2em;
+}
+/* -----------Main End------------*/
+
+/* -----------Footer Start------------*/
+/* -----------Footer End------------*/
