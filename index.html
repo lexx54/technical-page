@@ -3,7 +3,233 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Page</title>
+    <title>JavaScript Technical Page</title>
   </head>
-  <body></body>
+  <body>
+    <nav id="navbar">
+      <header></header>
+      <a href="#JavaScript" class="nav-link">JavaScript</a>
+      <a href="#Grammar" class="nav-link">Grammar</a>
+      <a href="#Control_Flow" class="nav-link">Control Flow</a>
+      <a href="#Loops" class="nav-link">Loops</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="JavaScript">
+        <header><h1>JavaScript</h1></header>
+        <p>what is JavaScript</p>
+        <p>
+          JavaScript is a cross-platform, object-oriented scripting language
+          used to make webpages interactive (e.g., having complex animations,
+          clickable buttons, popup menus, etc.). There are also more advanced
+          server side versions of JavaScript such as Node.js, which allow you to
+          add more functionality to a website than simply downloading files
+          (such as realtime collaboration between multiple computers). Inside a
+          host environment (for example, a web browser), JavaScript can be
+          connected to the objects of its environment to provide programmatic
+          control over them.
+        </p>
+        <code> console.log("welcome to JavaScript"); </code>
+      </section>
+
+      <section class="main-section" id="Grammar">
+        <header><h1>Grammar</h1></header>
+        <p>Basic</p>
+        <p>
+          JavaScript is case-sensitive and uses the Unicode character set. For
+          example, the word Früh (which means "early" in German) could be used
+          as a variable name.
+        </p>
+        <code>let fruh="foobar"</code>
+        <p>comments</p>
+        <p>
+          Comments behave like whitespace, and are discarded during script
+          execution.
+        </p>
+        <code>
+          // a one line comment <br />/* this is a longer, * multi-line comment
+          */
+        </code>
+        <p>Declarations</p>
+        <p>
+          You use variables as symbolic names for values in your application.
+          The names of variables, called identifiers
+        </p>
+        <code
+          >let locarVariable; <br />var globalVariable; <br />const
+          constantVariable;
+        </code>
+      </section>
+
+      <section class="main-section" id="Control_Flow">
+        <header><h1>Control Flow</h1></header>
+        <p><span>Block Statements</span></p>
+        <p>
+          The most basic statement is a block statement, which is used to group
+          statements. The block is delimited by a pair of curly brackets:
+        </p>
+        <code>
+          {
+          <br />statement_1; <br />statement_2; <br />⋮ <br />statement_n;
+          <br />}
+        </code>
+        <h2>Conditional Statements</h2>
+        <p><span>If ... else statement</span></p>
+        <p>
+          Use the if statement to execute a statement if a logical condition is
+          true. Use the optional else clause to execute a statement if the
+          condition is false.
+        </p>
+        <code>
+          if (condition) {
+          <br />statement_1; <br />} else { <br />statement_2; <br />}
+        </code>
+        <p><span>Switch Statement</span></p>
+        <p>
+          A switch statement allows a program to evaluate an expression and
+          attempt to match the expression's value to a case label. If a match is
+          found, the program executes the associated statement.
+        </p>
+        <code></code>
+        <p><span></span></p>
+        <p></p>
+        <code>
+          switch (expression) {
+          <br />case label_1: <br />statements_1; <br />[break;] <br />case
+          label_2: <br />statements_2; <br />[break;] <br />… <br />default:
+          <br />statements_def; <br />[break;] <br />}
+        </code>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header><h1>Loops</h1></header>
+        <p><span>For statement</span></p>
+        <p>
+          A for loop repeats until a specified condition evaluates to false.
+        </p>
+        <code
+          >for ([initialExpression]; [conditionExpression];
+          [incrementExpression]) <br />{statement}</code
+        >
+        <p><span>While Statement</span></p>
+        <p>
+          A while statement executes its statements as long as a specified
+          condition evaluates to true
+        </p>
+        <code>while (condition) <br />{statement}</code>
+        <p><span>Break Statement</span></p>
+        <p>Use the break statement to terminate a loop, switch</p>
+        <code>while (condition){ <br />breark; <br />} </code>
+        <p><span>Continue Statement</span></p>
+        <p>
+          it terminates the current iteration of the innermost enclosing while,
+          do-while, or for statement and continues execution of the loop with
+          the next iteration
+        </p>
+        <code>
+          for ([initialExpression];[conditionExpression];[incrementExpression]){
+          <br />continue; <br />}
+        </code>
+
+        <p><span>For ... in Statement</span></p>
+        <p>
+          The for...in statement iterates a specified variable over all the
+          enumerable properties of an object.
+        </p>
+        <code>for (variable in object) <br />{statement}</code>
+
+        <p><span>For ... of Statement</span></p>
+        <p>
+          The for...of statement creates a loop Iterating over iterable objects
+          (including Array, Map, Set, arguments object and so on), invoking a
+          custom iteration hook with statements to be executed for the value of
+          each distinct property.
+        </p>
+        <code>for (variable of object) <br />{statement}</code>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header><h1>Functions</h1></header>
+        <p><span>Function Declaration</span></p>
+        <p>
+          A function definition (also called a function declaration, or function
+          statement) consists of the function keyword, followed by:
+        </p>
+        <ul>
+          <li>The name of the function.</li>
+          <li>
+            A list of parameters to the function, enclosed in parentheses and
+            separated by commas
+          </li>
+          <li>
+            The JavaScript statements that define the function, enclosed in
+            curly brackets, {...}
+          </li>
+        </ul>
+        <code
+          >function square(number) { <br />return number * number; <br />}</code
+        >
+
+        <p><span>Function expression</span></p>
+        <p>
+          While the function declaration above is syntactically a statement,
+          functions can also be created by a function expression.
+        </p>
+        <code
+          >const square = function(number) { return number * number } <br />var
+          x = square(4) // x gets the value 16</code
+        >
+
+        <p><span>Calling Functions</span></p>
+        <p>
+          Defining a function does not execute it. Defining it simply names the
+          function and specifies what to do when the function is called.
+
+          <br />Calling the function actually performs the specified actions
+          with the indicated parameters. For example, if you define the function
+          square, you could call it as follows:
+        </p>
+        <code>functionName(); <br />square(5); </code>
+
+        <p><span>recursion</span></p>
+        <p>
+          A function can refer to and call itself. There are three ways for a
+          function to refer to itself:
+        </p>
+        <ul>
+          <li>The function's name</li>
+          <li>arguments.callee</li>
+          <li>An in-scope variable that refers to the function</li>
+        </ul>
+        <code>
+          function loop(x) {
+          <br />if (x >= 10) // "x >= 10" is the exit condition (equivalent to
+          "!(x < 10)") <br />return; <br />// do stuff <br />loop(x + 1); // the
+          recursive call <br />} <br />loop(0);
+        </code>
+
+        <p><span>Arrow Function</span></p>
+        <p>
+          An arrow function expression (previously, and now incorrectly known as
+          fat arrow function) has a shorter syntax compared to function
+          expressions and does not have its own this, arguments, super, or
+          new.target.
+        </p>
+        <code>
+          var a2 = a.map(function(s) { return s.length; }); //function
+          expression
+
+          <br />console.log(a2); // logs [8, 6, 7, 9]
+
+          <br />var a3 = a.map(s => s.length); //arrow function
+
+          <br />console.log(a3); // logs [8, 6, 7, 9]
+        </code>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
